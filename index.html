@@ -18,27 +18,27 @@
             <form>
               <div class="form-group">
                 <label>Boy's Name</label>
-                <input type="text" ng-model="boyName" placeholder="Enter a boy's name..">
+                <input type="text" ng-model="madlibs.boyName" placeholder="Enter a boy's name..">
               </div>
               <div class="form-group">
                 <label>Adjective</label>
-                <input type="text" ng-model="adjective" placeholder="Enter an adjective..">
+                <input type="text" ng-model="madlibs.adjective" placeholder="Enter an adjective..">
               </div>
               <div class="form-group">
                 <label>Plural noun</label>
-                <input type="text" ng-model="pluralNoun" placeholder="Enter a plural noun..">
+                <input type="text" ng-model="madlibs.pluralNoun" placeholder="Enter a plural noun..">
               </div>
               <div class="form-group">
                 <label>An insect, plural</label>
-                <input type="text" ng-model="insect" placeholder="Enter an insect, plural..">
+                <input type="text" ng-model="madlibs.insect" placeholder="Enter an insect, plural..">
               </div>
               <div class="form-group">
                 <label>Plural noun</label>
-                <input type="text" ng-model="pNoun" placeholder="Enter a plural noun..">
+                <input type="text" ng-model="madlibs.pNoun" placeholder="Enter a plural noun..">
               </div>
               <div class="form-group">
                 <label>A verb ending in "s"</label>
-                <input type="text" ng-model="verb" placeholder="Enter a verb ending in..">
+                <input type="text" ng-model="madlibs.verb" placeholder="Enter a verb ending in..">
               </div>
               <button class="btn btn-lg btn-warning">Generate!</button>
             </form>
@@ -46,7 +46,7 @@
 
           <div class="col-md-6">
             <h1>Mad with the Libs</h1>
-              <p>I'm in love with <strong>{{boyName | uppercase}}</strong>. He's so <strong>{{adjective | uppercase}}</strong>! He has big flat <strong>{{pluralNoun | uppercase}}</strong>, and when our <strong>{{insect | uppercase}}</strong> meet, I get <strong>{{pNoun | uppercase}}</strong> in my stomach. I've fallen for him like a ton of <strong>{{verb | uppercase}}</strong>, and he shuffles for me too. But I think he's got another girlfriend. What should I do?</p>
+              <p>I'm in love with <strong>{{madlibs.boyName | uppercase}}</strong>. He's so <strong>{{madlibs.adjective | uppercase}}</strong>! He has big flat <strong>{{madlibs.pluralNoun | uppercase}}</strong>, and when our <strong>{{madlibs.insect | uppercase}}</strong> meet, I get <strong>{{madlibs.pNoun | uppercase}}</strong> in my stomach. I've fallen for him like a ton of <strong>{{madlibs.verb | uppercase}}</strong>, and he shuffles for me too. But I think he's got another girlfriend. What should I do?</p>
               <button class="btn btn-lg btn-warning" ng-click="madlibs = ''">Play Again?</button>
           </div>
         </div> <!-- close controller -->
